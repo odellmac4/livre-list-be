@@ -1,4 +1,8 @@
 class BooksService
+  def volume(id)
+    get_url("/books/v1/volumes/#{id}")
+  end
+
   def volumes(keyword)
     get_url("/books/v1/volumes?q=#{keyword}")
   end
