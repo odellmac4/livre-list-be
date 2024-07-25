@@ -46,6 +46,7 @@ group :development, :test do
   gem "pry"
   gem "simplecov", "~> 0.22.0"
   gem 'shoulda-matchers', '~> 5.0'
+  gem 'dotenv'
 end
 
 group :test do
