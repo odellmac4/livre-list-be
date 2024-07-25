@@ -26,4 +26,28 @@ RSpec.describe 'Books request', :vcr do
       end
     end
   end
+  describe 'books show' do
+    it 'returns book based on a volume id'do
+      VCR.use_cassette("Books_request/show_page", record: :new_episodes) do
+        get '/api/v1/books/AbyoDwAAQBAJ'
+
+        expect(response).to be_successful
+
+        book_response = JSON.parse(response.body, symbolize_names: true)
+
+        
+        expect(book_response).to have_key(:id)
+        expect(book_response).to have_key(:title)
+        expect(book_response).to have_key(:subtitle)
+        expect(book_response).to have_key(:authors)
+        expect(book_response).to have_key(:publisher)
+        expect(book_response).to have_key(:published_date)
+        expect(book_response).to have_key(:description)
+        expect(book_response).to have_key(:categories)
+        expect(book_response).to have_key(:avg_rating)
+        expect(book_response).to have_key(:image_links)
+        expect(book_response).to have_key(:buy_link)
+      end
+    end
+  end
 end

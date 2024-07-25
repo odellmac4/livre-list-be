@@ -7,4 +7,10 @@ class BookFacade
       Book.new(book)
     end
   end
+
+  def self.book_by_id(id)
+    service = BooksService.new
+    book = service.volume(id)
+    Book.new(book)
+  end
 end

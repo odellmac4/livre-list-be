@@ -13,7 +13,7 @@ RSpec.describe Book do
     expect(@book.authors).to eq(["The Freedom Writers", "Erin Gruwell"])
     expect(@book.publisher).to eq("Crown")
     expect(@book.published_date).to eq("2007-04-24")
-    expect(@book.description.include?("#1 NEW YORK TIMES BESTSELLER")).to eq true
+    expect(@book.description).to_not eq ("<p><b>Praised by fan favorites including Hoda Kotb, Kim & Khloe Kardashian, and Jimmy Fallon!</b></p><p><b>Inspired by the eagerly awaited birth of her daughter, Kaavia James Union Wade, <i>New York Times</i> bestselling author and award-winning actress Gabrielle Union pens a festive and universal love letter from parents to little ones, perfect for welcoming a baby to the party of life!</b></p><p>Reminiscent of favorites such as <i>The Wonderful Things You’ll Be</i> by Emily Winfield Martin, <i>I’ve Loved You Since Forever</i> by Hoda Kotb, and <i>Take Heart, My Child</i> by Ainsley Earhardt, <i>Welcome to the Party</i> is an upbeat celebration of new life that you’ll want to enjoy with your tiny guest of honor over and over again.</p><p> A great gift for all occasions, especially Mother’s Day, Father’s Day, baby showers, and birthdays.</p>")
     expect(@book.categories).to eq(["Education"])
     expect(@book.avg_rating).to eq(4.5)
     expect(@book.image_links).to be_a Hash

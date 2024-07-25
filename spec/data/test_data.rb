@@ -11,19 +11,7 @@ module TestData
       :publisher=>"Crown",
       :publishedDate=>"2007-04-24",
       :description=>
-       "#1 NEW YORK TIMES BESTSELLER • The twentieth anniversary edition of the classic story of an incredible group of students and the teacher who inspired them, featuring updates on the students’ lives, new journal entries, and an introduction by Erin Gruwell Now
-   a public television documentary, Freedom Writers: Stories from the Heart In 1994, an idealistic first-year teacher in Long Beach, C
-  alifornia, named Erin Gruwell confronted a room of “unteachable, at-risk” students. She had intercepted a note with an ugly racial c
-  aricature and angrily declared that this was precisely the sort of thing that led to the Holocaust. She was met by uncomprehending l
-  ooks—none of her students had heard of one of the defining moments of the twentieth century. So she rebooted her entire curriculum, 
-  using treasured books such as Anne Frank’s diary as her guide to combat intolerance and misunderstanding. Her students began recordi
-  ng their thoughts and feelings in their own diaries, eventually dubbing themselves the “Freedom Writers.” Consisting of powerful ent
-  ries from the students’ diaries and narrative text by Erin Gruwell, The Freedom Writers Diary is an unforgettable story of how hard 
-  work, courage, and determination changed the lives of a teacher and her students. In the two decades since its original publication,
-   the book has sold more than one million copies and inspired a major motion picture Freedom Writers. And now, with this twentieth-an
-  niversary edition, readers are brought up to date on the lives of the Freedom Writers, as they blend indispensable takes on social i
-  ssues with uplifting stories of attending college—and watch their own children follow in their footsteps. The Freedom Writers Diary 
-  remains a vital read for anyone who believes in second chances.",
+       "<p><b>Praised by fan favorites including Hoda Kotb, Kim & Khloe Kardashian, and Jimmy Fallon!</b></p><p><b>Inspired by the eagerly awaited birth of her daughter, Kaavia James Union Wade, <i>New York Times</i> bestselling author and award-winning actress Gabrielle Union pens a festive and universal love letter from parents to little ones, perfect for welcoming a baby to the party of life!</b></p><p>Reminiscent of favorites such as <i>The Wonderful Things You’ll Be</i> by Emily Winfield Martin, <i>I’ve Loved You Since Forever</i> by Hoda Kotb, and <i>Take Heart, My Child</i> by Ainsley Earhardt, <i>Welcome to the Party</i> is an upbeat celebration of new life that you’ll want to enjoy with your tiny guest of honor over and over again.</p><p> A great gift for all occasions, especially Mother’s Day, Father’s Day, baby showers, and birthdays.</p>",
       :industryIdentifiers=>[{:type=>"ISBN_13", :identifier=>"9780767928335"}, {:type=>"ISBN_10", :identifier=>"0767928334"}],
       :readingModes=>{:text=>true, :image=>true},
       :pageCount=>458,

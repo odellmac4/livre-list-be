@@ -14,7 +14,7 @@ class BooksService
 
   def conn
     Faraday.new(url: "https://www.googleapis.com") do |faraday|
-      faraday.params[:key] = Rails.application.credentials.google_books[:key]
+      faraday.params[:key] = ENV['GOOGLE_API_KEY']
     end
   end
 end
