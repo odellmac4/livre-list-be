@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :books, only: [:index, :show]
+      
+      resources :users do
+        resources :bookshelves, only: [:index, :show] do
+          resources :books, to: "bookshelf_books#index", only: [:index]
+        end
+      end
     end
   end
 end
