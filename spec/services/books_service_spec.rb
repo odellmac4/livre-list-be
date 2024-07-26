@@ -139,7 +139,7 @@ RSpec.describe BooksService do
 
   it 'retrieves user bookshelf books when provided with a user id, shelf id and query param of q=books' do
     VCR.use_cassette("user_bookshelf_books", record: :new_episodes) do
-      data = {uid: 106196942824430802445, shelf_id: 1001, q: "books"}
+      data = {uid: 106196942824430802445, shelf_id: 1001, books: true}
       bookshelf_books = @service.bookshelf(data)
       expect(bookshelf_books).to have_key(:kind)
       expect(bookshelf_books).to have_key(:items)
