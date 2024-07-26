@@ -68,4 +68,18 @@ module TestData
        "And now, with this twentieth-anniversary edition, readers are brought up to date on the lives of the Freedom Writers, as they 
   blend indispensable takes on social issues with uplifting stories of attending college—and watch their own ..."}}
   end
+
+  def self.shelves_data
+    data = 
+      {
+        "kind": "books#bookshelf",
+        "id": 0,
+        "title": "Favorites",
+        "access": "PUBLIC",
+        "updated": "2024-07-25T19:09:30.778Z",
+        "created": "2024-07-25T19:09:30.778Z",
+        "volumeCount": 0,
+        "volumesLastUpdated": "2024-07-25T19:09:30.776Z"
+      }
+  end
 end
