@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/users/106196942824430802445/bookshelves?key=DONT_SHARE_MY_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Thu, 25 Jul 2024 21:05:52 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "books#bookshelves",
+          "items": [
+            {
+              "kind": "books#bookshelf",
+              "id": 0,
+              "title": "Favorites",
+              "access": "PUBLIC",
+              "updated": "2024-07-25T19:09:30.778Z",
+              "created": "2024-07-25T19:09:30.778Z",
+              "volumeCount": 0,
+              "volumesLastUpdated": "2024-07-25T19:09:30.776Z"
+            },
+            {
+              "kind": "books#bookshelf",
+              "id": 1001,
+              "title": "For the Culture",
+              "description": "Books written by black authors and/or books that highlight black stories.",
+              "access": "PUBLIC",
+              "updated": "2024-07-25T19:09:33.686Z",
+              "created": "2024-07-25T19:09:33.686Z",
+              "volumeCount": 6,
+              "volumesLastUpdated": "2024-07-25T19:09:33.685Z"
+            }
+          ]
+        }
+  recorded_at: Thu, 25 Jul 2024 21:05:52 GMT
+recorded_with: VCR 6.2.0
