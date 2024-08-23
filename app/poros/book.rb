@@ -26,10 +26,6 @@ class Book
   end
 
   def format_description(description_data)
-    if description_data.include?("<") || description_data.include?(">") || description_data.include?("/")
-      Nokogiri::HTML(description_data).text.strip
-    else
-      description_data
-    end
+    Nokogiri::HTML(description_data).text.strip
   end
 end
