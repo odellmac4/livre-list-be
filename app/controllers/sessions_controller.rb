@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     user = User.from_omniauth(auth)
     if user.valid?
       session[:user] = user
-      user.upate(token: auth.credentials.token)
+      user.update(token: auth.credentials.token)
       render json: {
         user: {
           uid: user.uid,
