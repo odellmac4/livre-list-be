@@ -4,7 +4,7 @@ RSpec.describe Book do
   before(:each) do
     @book = Book.new(TestData.book_data)
   end
-
+  test = 1
   it 'is a book' do
     expect(@book).to be_a Book
     expect(@book.id).to eq("S-JAtt8aHaUC")
