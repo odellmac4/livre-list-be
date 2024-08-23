@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  get '/auth/:provider/callback' => 'sessions#omniauth'
   namespace :api do
     namespace :v1 do
       resources :books, only: [:index, :show]
