@@ -47,9 +47,9 @@ group :development, :test do
   gem "simplecov", "~> 0.22.0"
   gem 'shoulda-matchers', '~> 5.0'
   gem 'dotenv'
-  gem 'omniauth'
-  gem 'omniauth-google-oauth2'
-  gem 'omniauth-rails_csrf_protection'
+  # gem 'omniauth'
+  # gem 'omniauth-google-oauth2'
+  # gem 'omniauth-rails_csrf_protection'
 end
 
 group :test do
